@@ -124,10 +124,32 @@ body, html {
 
 .banner-buttons a{
 	width: 200px;
-	height: 60px;
 	margin-left: 50px;
 	font-size: 25px;
-	padding-top: 12px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+
+.testbtn1{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Oswald-Light';
+	font-weight: 200;
+	border: 2px solid #fff;
+	vertical-align: middle;
+	border-radius: 5px;
+	transition: background-color .3s, color .3s;
+}
+
+.testbtn1:hover{
+	color: #DD3F28;
+	background-color: #fff;
+}
+
+.testbtn1:active{
+	box-shadow: 0 0 10px rgba(0,0,0,.7), inset 0 0 10px rgba(0,0,0,.6);
 }
 
 .bottom-info{
