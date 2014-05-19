@@ -125,9 +125,11 @@ body, html {
 .banner-buttons a{
 	width: 200px;
 	margin-left: 50px;
-	font-size: 25px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	font-size: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,.7);
 }
 
@@ -135,7 +137,7 @@ body, html {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-	font-family: 'Oswald-Light';
+	font-family: 'bebas';
 	font-weight: 200;
 	border: 2px solid #fff;
 	vertical-align: middle;
