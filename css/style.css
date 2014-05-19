@@ -32,31 +32,32 @@ body, html {
 #navbar-container{
 	width: 100%;
 	height: 75px;
-	background-color: rgba(241,241,241,0.9);
+	background-color: rgba(255,255,255,0.9);
 	position: fixed;
 	top: 0;
+	left: 0;
+	z-index: 10;
 	box-shadow: 10px 0px 10px #888888;
-	opacity:;
 }
 
 #navbar-title{
 	float: left;
 	margin-top: 0px;
 	height: 75px;
-	width: 20%;
+	width: 12%;
 }
 
 #navbar-left{
 	padding-top: 20px;
 	text-align: right;
-	width: 40%;
+	width: 44%;
 	float: left;
 }
 
 #navbar-right{
 	padding-top: 20px;
 	text-align: left;
-	width: 40%;
+	width: 44%;
 	float: left;
 }
 
@@ -64,14 +65,14 @@ body, html {
 	text-decoration: none;
 	font-family: "Bebas";
 	font-size: 50pt;
-	color: #333366; 
+	color: #222; 
 }
 
 .navbar a{
 	text-decoration: none;
 	font-family: "Oswald-Light";
 	font-size: 20pt;
-	color: gray;
+	color: #444;
 }
 
 .navbar a:hover{
@@ -87,21 +88,20 @@ body, html {
 }
 
 #banner{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 700px;
-}
-
-#banner-img{
-	width: 100%;
-	height: 100%;
+	height: 580px;
 	background-image: url("../img/techlights_crop.jpg");
 	background-size: cover;
-	z-index: -1;
+	background-color: #000;
+	z-index: 0;
 }
 
 #banner-text{
-	margin-top: -500px;
-	z-index: 1;
+	margin-top: 150px;
+	text-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
 #banner-text h1{
@@ -113,13 +113,28 @@ body, html {
 
 #banner-text p{
 	font-family: "Oswald-Light";
-	font-size: 50pt;
+	font-size: 45pt;
 	color: white;
 }
 
-#bottom-info{
+.banner-buttons{
+	margin-top: 80px;
+	margin-left: -50px;
+}
+
+.banner-buttons a{
+	width: 200px;
+	height: 60px;
+	margin-left: 50px;
+	font-size: 25px;
+	padding-top: 12px;
+}
+
+.bottom-info{
 	width: 100%;
-	
+	float: left;
+	position: absolute;
+	top: 580px;
 }
 
 #left-box{
