@@ -40,24 +40,29 @@ body, html {
 	box-shadow: 10px 0px 10px #888888;
 }
 
+.navbar-wrapper{
+	width: 1000px;
+	margin: auto;
+}
+
 #navbar-title{
 	float: left;
 	margin-top: 0px;
 	height: 75px;
-	width: 12%;
+	width: 26%;
 }
 
 #navbar-left{
 	padding-top: 20px;
 	text-align: right;
-	width: 44%;
+	width: 33%;
 	float: left;
 }
 
 #navbar-right{
 	padding-top: 20px;
 	text-align: left;
-	width: 44%;
+	width: 33%;
 	float: left;
 }
 
@@ -155,6 +160,7 @@ body, html {
 }
 
 .bottom-info{
+	background-color: #f5f5f5;
 	padding-top: 20px;
 	width: 100%;
 	float: left;
@@ -173,6 +179,18 @@ body, html {
 	font-family: 'bebas';
 	font-size: 30px;
 	color: #222;
+}
+
+.purple{
+	color: #9d2dbf !important;
+}
+
+.blue{
+	color: #006eff !important;
+}
+
+.orange{
+	color: orange !important;
 }
 
 .bottom-info p{
@@ -212,11 +230,11 @@ body, html {
 	color: #AAAAFF;
 }
 
-#page-container-1{
+.page-container-1{
 	margin-top: 75px;
 }
 
-#body-container-1{
+.body-container-1{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -224,42 +242,15 @@ body, html {
 	color: #222222;
 }
 
-#body-header-1{
+.body-header-1{
 	margin-top: 25px;
 	margin-bottom: 0px;
 }
 
-#columns{
-	overflow: hidden;
-}
-
-#col-left{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: left;
-}
-
-#col-right{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: right;
-}
-
-#columns2{
-	overflow: hidden;
-	margin-top: 10px;
-}
-
-#col2left{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: left;
-}
-
-#col2right{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: right;
+.body-header-descrip{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #page-container-2{
@@ -293,7 +284,7 @@ body, html {
 
 h1{ /*Main page header*/
 	color: #333366;
-	font-size: 100pt;
+	font-size: 110pt;
 	font-family: 'Bebas';
 	font-weight: normal;
 	margin-top: 0px;
@@ -318,7 +309,7 @@ h3{ /*column headers, subheaders in body of text*/
 }
 
 
-h4{
+h4{ /*body headers*/
 	font-family: "Bebas";
 	font-size: 80pt;
 	color: #333366;
