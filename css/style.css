@@ -212,11 +212,11 @@ body, html {
 	color: #AAAAFF;
 }
 
-#page-container-1{
+.page-container-1{
 	margin-top: 75px;
 }
 
-#body-container-1{
+.body-container-1{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -224,42 +224,15 @@ body, html {
 	color: #222222;
 }
 
-#body-header-1{
+.body-header-1{
 	margin-top: 25px;
 	margin-bottom: 0px;
 }
 
-#columns{
-	overflow: hidden;
-}
-
-#col-left{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: left;
-}
-
-#col-right{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: right;
-}
-
-#columns2{
-	overflow: hidden;
-	margin-top: 10px;
-}
-
-#col2left{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: left;
-}
-
-#col2right{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: right;
+.body-header-descrip{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #page-container-2{
@@ -293,7 +266,7 @@ body, html {
 
 h1{ /*Main page header*/
 	color: #333366;
-	font-size: 100pt;
+	font-size: 110pt;
 	font-family: 'Bebas';
 	font-weight: normal;
 	margin-top: 0px;
