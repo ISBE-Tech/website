@@ -40,24 +40,29 @@ body, html {
 	box-shadow: 10px 0px 10px #888888;
 }
 
+.navbar-wrapper{
+	width: 1000px;
+	margin: auto;
+}
+
 #navbar-title{
 	float: left;
 	margin-top: 0px;
 	height: 75px;
-	width: 12%;
+	width: 26%;
 }
 
 #navbar-left{
 	padding-top: 20px;
 	text-align: right;
-	width: 44%;
+	width: 33%;
 	float: left;
 }
 
 #navbar-right{
 	padding-top: 20px;
 	text-align: left;
-	width: 44%;
+	width: 33%;
 	float: left;
 }
 
