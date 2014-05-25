@@ -160,6 +160,7 @@ body, html {
 }
 
 .bottom-info{
+	background-color: #f5f5f5;
 	padding-top: 20px;
 	width: 100%;
 	float: left;
@@ -178,6 +179,18 @@ body, html {
 	font-family: 'bebas';
 	font-size: 30px;
 	color: #222;
+}
+
+.purple{
+	color: #9d2dbf !important;
+}
+
+.blue{
+	color: #006eff !important;
+}
+
+.orange{
+	color: orange !important;
 }
 
 .bottom-info p{
