@@ -55,14 +55,14 @@ body, html {
 #navbar-left{
 	padding-top: 20px;
 	text-align: right;
-	width: 33%;
+	width: 37%;
 	float: left;
 }
 
 #navbar-right{
 	padding-top: 20px;
 	text-align: left;
-	width: 33%;
+	width: 37%;
 	float: left;
 }
 
@@ -256,34 +256,26 @@ body, html {
 	margin-right: auto;
 }
 
-#page-container-2{
-	background-color: #f1f1f1;
+.page-container-2{
+	background-color: #f1f1f1;	
 }
 
-#body-container-2{
+
+.page-container{
+
+}
+
+.body-container-2{
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	width:80%;
 	text-align: center;
 	color: #222222;
 }
-#body-whatwedo{
-	margin-top: 25px;
-}
 
-#page-container-3{
-}
 
-#body-container-3{
-	margin-left: auto;
-	margin-right: auto;
-	width:80%;
-	text-align: center;
-	color: #222222;
-}
-#body-meetourteam{
-	margin-top: 25px;
-}
 
 .footer{
 	height: 200px;
@@ -296,6 +288,7 @@ body, html {
 	font-family: "Bebas";
 	font-size: 40pt;
 }
+
 
 h1{ /*Main page header*/
 	color: #333366;
