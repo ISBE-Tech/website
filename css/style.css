@@ -291,7 +291,7 @@ h3{ /*column headers, subheaders in body of text*/
 }
 
 
-h4{
+h4{ /*body headers*/
 	font-family: "Bebas";
 	font-size: 80pt;
 	color: #333366;
