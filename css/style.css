@@ -238,8 +238,11 @@ body, html {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 	color: #222222;
+
 }
 
 .body-header-1{
@@ -280,6 +283,18 @@ body, html {
 }
 #body-meetourteam{
 	margin-top: 25px;
+}
+
+.footer{
+	height: 200px;
+	width: 100%;
+	background-color: #484848;
+}
+
+.foot-logo{
+	color: white;
+	font-family: "Bebas";
+	font-size: 40pt;
 }
 
 h1{ /*Main page header*/
