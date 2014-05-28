@@ -29,6 +29,67 @@ body, html {
 	text-align: center;
 }
 
+
+h1{ /*Main page header*/
+	color: #333366;
+	font-size: 110pt;
+	font-family: 'Bebas';
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2{ /*for text right under main page header*/
+	margin-top: 0px;
+	font-size: 22pt;
+	font-family:"Oswald-Light";
+	font-weight: normal;
+}
+
+
+h3{ /*column headers, subheaders in body of text*/
+	font-family: "Bebas";
+	color: #AAAAFF;
+	font-size: 48pt;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+h4{ /*body headers*/
+	font-family: "Bebas";
+	font-size: 80pt;
+	color: #333366;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+
+p{ /*for all body text*/
+	font-family: "Oswald-Light";
+	font-size: 16pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.osbold{ /*Oswald Bold*/
+	font-family: "Oswald";
+	font-weight: bold;
+}
+
+.oswald-30{
+	font-family: "Oswald-Light";
+	font-size: 30pt;
+}
+
+.bebas-32{
+	font-family: "Bebas";
+	font-size: 32pt;
+
+}
+
 /*----------------NAVIGATION BAR-------------------*/
 
 #navbar-container{
@@ -260,7 +321,20 @@ body, html {
 
 .body-container-1 h1{
 	text-shadow: 0 0 5px rgba(0,0,0,.3);
+/*	color: #333366;
+	font-size: 110pt;
+	font-family: 'Bebas';
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;*/
 }
+/*
+.body-container-1 h2{ /*for text right under main page header*/ /*
+	margin-top: 0px;
+	font-size: 22pt;
+	font-family:"Oswald-Light";
+	font-weight: normal;
+} */
 
 .body-header-descrip{
 	width: 60%;
@@ -275,7 +349,7 @@ body, html {
 	background-color: #f1f1f1;
 }
 
-.body-container-2{ /*FOR TEXT - 80% WIDTH FOR BETTER READABILITY*/
+.body-container-2{ /*FOR TEXT - 80% WIDTH*/
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
@@ -283,6 +357,126 @@ body, html {
 	width:80%;
 	text-align: center;
 	color: #222222;
+}
+
+
+/*----------about page---------*/
+.about-col{
+	height: 200px;
+	padding: 75px;
+	text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.about-col h1{
+	font-family: "Bebas";
+	font-size: 85px;
+	color: white;
+}
+
+.about-col h2{
+	font-family: "Oswald-Light";
+	font-size: 60px;
+}
+
+.about-col p{
+	font-family: "oswald-light";
+	font-size: 30px;
+}
+
+.about-col span{
+	color: #ff9933;
+	font-weight: bold;
+}
+
+.about-col.left{
+	background-color: #727272;
+	color: white;
+}
+
+.about-col.right{
+	background-color: #705679;
+	color: white;
+}
+
+#about-learnmore{
+	background-color: #f1f1f1;
+	height: 80px;
+	padding: 20px;
+}
+
+#about-learnmore span{
+	font-family: "Oswald-Light";
+	font-size: 60px;
+}
+
+#about-learnmore a{
+	font-family: "Oswald-Light";
+	font-size: 60px;
+	color: #ff9933;
+	text-decoration: none;
+}
+
+#team-faces{
+	padding-top: 25px;
+}
+#team-faces li{
+	font-family: "Oswald-Light";
+	font-size: 25px;
+}
+
+/*------------PROJECTS PAGE----------------*/
+
+.proj{
+	height: 400px;
+	background-color: #f1f1f1;
+}
+
+.link{
+	height: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: rgba(0,0,0,0.2);
+
+}
+
+.link a{
+	font-family: "Bebas";
+	font-size: 90px;
+	color: white;
+	opacity: 0;
+	text-decoration: none;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.link a:hover{
+	color: #ff9933;
+}
+
+.link:hover{
+	background-color: rgba(0,0,0,0.7);
+}
+
+.link:hover a{
+	opacity: 1;
+}
+
+.proj.shermanave{
+	background-image: url("../img/shermanave.jpg");
+	background-size: cover;
+}
+
+#projects-workwithus{
+	height: 125px;
+	background-color: #705679;
+	padding: 25px;
+	font-size: 85px;
+	font-family: "Oswald-Light";
+	color: white;
+}
+
+#projects-workwithus a{
+	color: #ff9933;
+	text-decoration: none;
 }
 
 /*--------------------FOOTER---------------------*/
@@ -298,66 +492,5 @@ body, html {
 	font-family: "Bebas";
 	font-size: 40pt;
 }
-
-
-h1{ /*Main page header*/
-	color: #333366;
-	font-size: 110pt;
-	font-family: 'Bebas';
-	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-h2{ /*for text right under main page header*/
-	margin-top: 0px;
-	font-size: 22pt;
-	font-family:"Oswald-Light";
-	font-weight: normal;
-}
-
-
-h3{ /*column headers, subheaders in body of text*/
-	font-family: "Bebas";
-	color: #AAAAFF;
-	font-size: 48pt;
-	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-
-h4{ /*body headers*/
-	font-family: "Bebas";
-	font-size: 80pt;
-	color: #333366;
-	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-p{ /*for all body text*/
-	font-family: "Oswald-Light";
-	font-size: 16pt;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.osbold{ /*Oswald Bold*/
-	font-family: "Oswald";
-	font-weight: bold;
-}
-
-.oswald-30{
-	font-family: "Oswald-Light";
-	font-size: 30pt;
-}
-
-.bebas-32{
-	font-family: "Bebas";
-	font-size: 32pt;
-
-}
-
 
 
