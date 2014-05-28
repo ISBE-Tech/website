@@ -479,6 +479,46 @@ p{ /*for all body text*/
 	text-decoration: none;
 }
 
+/*------------------CONTACT--------------------*/
+.contact-col{
+	height: 175px;
+	padding: 75px;
+	text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+
+.contact-col h2{
+	font-family: "Bebas";
+	font-size: 85px;
+	color: white;
+}
+
+.contact-col h1{
+	font-family: "Oswald-Light";
+	font-size: 60px;
+	color: white;
+}
+
+.contact-col p{
+	font-family: "oswald-light";
+	font-size: 30px;
+}
+
+.contact-col span{
+	color: #ff9933;
+	font-weight: bold;
+}
+
+.contact-col.work{
+	background-color: #727272;
+	color: white;
+}
+
+.contact-col.join{
+	background-color: #705679;
+	color: white;
+}
+
 /*--------------------FOOTER---------------------*/
 
 .footer{
