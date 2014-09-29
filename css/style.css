@@ -394,7 +394,7 @@ p{ /*for all body text*/
 }
 
 .about-col.right{
-	background-color: #705679;
+	background-color: #474775;
 	color: white;
 }
 
@@ -458,6 +458,11 @@ p{ /*for all body text*/
 
 .link:hover a{
 	opacity: 1;
+}
+
+.proj.isbemain{
+	background-image: url("../img/isbemain.jpg");
+	background-size: cover;
 }
 
 .proj.shermanave{
