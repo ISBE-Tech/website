@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row .six.columns { width: 48.93617%; }
 
 .row .six.columns.full { width: 50%}
-.row .six.columns.marg { width: 46%; margin-left: 2%; margin-right: 2%; padding-top: 2%; padding-bottom: 2%;}
+.row .six.columns.marg { width: 48%; margin-left: 1%; margin-right: 1%; padding-top: 1%; padding-bottom: 1%;}
 
 .row .seven.columns { width: 57.44681%; }
 .row .eight.columns { width: 65.95745%; }

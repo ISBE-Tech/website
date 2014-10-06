@@ -95,7 +95,7 @@ p{ /*for all body text*/
 #navbar-container{
 	width: 100%;
 	height: 70px;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.95);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -362,8 +362,8 @@ p{ /*for all body text*/
 
 /*----------about page---------*/
 .about-col{
-	height: 200px;
-	padding: 75px;
+	height: 250px;
+	padding: 10%;
 	text-shadow: 0 0 10px rgba(0,0,0,.4);
 }
 
@@ -398,10 +398,17 @@ p{ /*for all body text*/
 	color: white;
 }
 
+.about-text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 #about-learnmore{
 	background-color: #f1f1f1;
 	height: 80px;
 	padding: 20px;
+	text-shadow: 0 0 10px rgba(0,0,0,.2)
 }
 
 #about-learnmore span{
@@ -419,12 +426,16 @@ p{ /*for all body text*/
 #team-faces{
 	padding-top: 25px;
 }
+
 #team-faces li{
 	font-family: "Oswald-Light";
 	font-size: 25px;
 }
 
 /*------------PROJECTS PAGE----------------*/
+#projects-container{
+	padding: 0%;
+}
 
 .proj{
 	height: 400px;
@@ -435,7 +446,9 @@ p{ /*for all body text*/
 	height: 200px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: rgba(0,0,0,0.2);
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: rgba(0,0,0,0.6);
 
 }
 
@@ -443,7 +456,7 @@ p{ /*for all body text*/
 	font-family: "Bebas";
 	font-size: 90px;
 	color: white;
-	opacity: 0;
+	opacity: 1;
 	text-decoration: none;
 	text-shadow: 0 0 10px rgba(0,0,0,1);
 }
@@ -453,11 +466,11 @@ p{ /*for all body text*/
 }
 
 .link:hover{
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.1);
 }
 
 .link:hover a{
-	opacity: 1;
+	opacity: 0;
 }
 
 .proj.isbemain{
@@ -470,13 +483,25 @@ p{ /*for all body text*/
 	background-size: cover;
 }
 
+.proj.isbemark{
+	background-image: url("../img/isbemark.jpg");
+	background-size: cover;
+}
+
+.proj.isbeanalytics{
+	background-image: url("../img/isbeanalytics.jpg");
+	background-size: cover;
+}
+
+
 #projects-workwithus{
 	height: 125px;
-	background-color: #705679;
+	background-color: #f1f1f1;
 	padding: 25px;
 	font-size: 85px;
 	font-family: "Oswald-Light";
-	color: white;
+	color: black;
+	padding-top: 2%
 }
 
 #projects-workwithus a{
