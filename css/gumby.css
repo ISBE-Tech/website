@@ -63,6 +63,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .row .two.columns { width: 14.89362%; }
 .row .three.columns { width: 23.40426%; }
 .row .four.columns { width: 31.91489%; }
+
+.row .four.columns.full { width: 33.33334%; }
+
 .row .five.columns { width: 40.42553%; }
 .row .six.columns { width: 48.93617%; }
 
