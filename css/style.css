@@ -129,12 +129,25 @@ p{ /*for all body text*/
 #navbar-container{
 	width: 100%;
 	height: 75px;
-	background-color: rgba(255,255,255,0.95);
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 10;
 	box-shadow: 10px 0px 10px #888888;
+}
+
+#navbar-container.norm{
+	background-color: rgba(255,255,255,0.9);
+}
+
+#navbar-container.homepage{
+	float: left;
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: none;
+}
+
+#navbar-container.homepage a{
+	color: #cecece;
 }
 
 .navbar-wrapper{
@@ -198,16 +211,31 @@ p{ /*for all body text*/
 }
 
 
+/*---------------------FOOTER----------------------*/
+#footer-container{
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+}
+
+#footer-wrapper{
+	width: 75%;
+	padding-top: 40px;
+	margin: auto;
+}
+
+
+
 /*-----------------------HOMEPAGE BANNER-------------------------*/
 
 
 #banner{
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/techlights_crop.jpg");
+	background: url("../img/techlights_crop.jpg") no-repeat center center;
 	background-size: cover;
 	background-color: #000;
 	z-index: 0;
@@ -321,8 +349,8 @@ p{ /*for all body text*/
 
 /*----------------------PAGE CONTAINER CLASSES----------------------*/
 
-.page-container-1{ /*FOR TOP OF PAGE - COMPENSATES FOR NAVBAR SPACE*/
-	margin-top: 75px;
+.page-container-1{ 
+	margin-top: 0px;
 }
 
 #about-bkgd{ /*BACKGROUND IMAGE FOR PAGECONTIANER1*/
