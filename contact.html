@@ -1,22 +1,85 @@
 <head>
-	<title>ISBE Tech | Contact</title>
+	<title>ISBE Tech | Contact</title>	
 	<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	<!-- GRID -->
+	<link rel="stylesheet" type="text/css" href="css/gumby.css" >
+
+	<link rel="stylesheet" href="css/buttons.css">
+	 
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/buttons.js"></script>
+	<script type="text/javascript" src="js/navbutton.js"></script>
 </head>
 
 <body>
-	<div id="navbar-container">
-		<div class = "navbar"id = "navbar-left">
-			<a href="about.html">ABOUT</a>
-			<a href="projects.html">PROJECTS</a>
+	<div id="navbar-container" class="norm">
+		<div class="navbar-wrapper">
+			<div id ="navbar-title">
+				<a href="index.html">ISBE TECH</a>
+			</div>
+			<div class = "navbar" id = "navbar-full">
+				<ul>
+					<li><a href="about.html" >ABOUT US</a></li>
+					<li><a href="whatwedo.html">WHAT WE DO</a></li>
+					<li><a href="projects.html">PROJECTS</a></li>
+					<li><a href="contact.html"id="active">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div id="dropdown-div">
+			    <a href="#" id="dropdown-button">
+			    	<button class="btn-lg">
+			    		<span class="glyphicon glyphicon-align-justify">
+			    		</span>
+		    		</button>
+			    </a>
+			</div>
 		</div>
+	</div>
+	<div id="dropdown-nav" style="display: none;">				
+		<ul>
+			<li><a href="about.html" >ABOUT US</a></li>
+			<li><a href="whatwedo.html">WHAT WE DO</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="contact.html"id="active">CONTACT US</a></li>
+		</ul>
+	</div>
 
-		<div id ="navbar-title">
-			<a href="home.html">ISBE TECH</a>
+	<div class = "page-container-1" id="about-bkgd">
+		<div class = "body-container-1">
+			<h1>GET IN TOUCH.</h1>	
+			<div class = "body-header-descrip">
+				<h2>We'd love to hear from you.</h2>
+			</div>
 		</div>
+	</div>
 
-		<div class = "navbar" id = "navbar-right">
-			<a href="events.html">EVENTS</a>
-			<a href="contact.html">CONTACT</a>
+	<div id="contact-links">
+		<div class="row">
+			<div class = "six columns full">
+				<div class = "contact-col join">
+					<h1>are you a <span>student</span>?</h1>
+					<p>come create amazing products.</p>
+					<br>
+					<a href=# class="borderbtn">JOIN US</a>
+				</div>
+			</div>
+			<div class = "six columns full">
+				<div class = "contact-col work">
+					<h1>are you a <span>business</span>?</h1>
+					<p>let's collaborate.</p>
+					<br>
+					<a href=# class="borderbtn">WORK WITH US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="social-media-container">
+		<div id = "social-media-buttons">
+			<a href='https://www.facebook.com/isbetech'><img src="./img/fblogo.png" height='64' width='64'></a>
+			<a href='https://github.com/ISBE-Tech'><img src="./img/octocat.png" height='64' width='64'></a>
 		</div>
 	</div>
 </body>

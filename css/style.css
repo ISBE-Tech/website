@@ -23,40 +23,237 @@ a.oslink:link{color: #FF6600; text-decoration: none;}
 a.oslink:visited{color: #FF6600; text-decoration: none;}
 a.oslink:hover{color: #FFAA00; text-decoration: none;}
 
+#active{
+	color: #FFAA00;
+}
+
+a{
+	text-decoration: none;
+}
+
 body, html {
 	margin: 0;
 	width: 100%;
 	text-align: center;
 }
 
+
+h1{ /*Main page header*/
+	color: #333366;
+	font-size: 110pt;
+	font-family: 'Bebas';
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2{ /*for text right under main page header*/
+	margin-top: 0px;
+	font-size: 22pt;
+	font-family:"Oswald-Light";
+	font-weight: normal;
+}
+
+
+h3{ /*column headers, subheaders in body of text*/
+	font-family: "Bebas";
+	color: #AAAAFF;
+	font-size: 48pt;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+h4{ /*body headers*/
+	font-family: "Bebas";
+	font-size: 80pt;
+	color: #333366;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+
+p{ /*for all body text*/
+	font-family: "Oswald-Light";
+	font-size: 16pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.osbold{ /*Oswald Bold*/
+	font-family: "Oswald";
+	font-weight: bold;
+}
+
+.oswald-30{
+	font-family: "Oswald-Light";
+	font-size: 30pt;
+}
+
+.bebas-32{
+	font-family: "Bebas";
+	font-size: 32pt;
+
+}
+
+
+
+/*---------------------BUTTONS-----------------------*/
+
+.borderbtn{
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*box-shadow: 0 0 10px rgba(0,0,0,.7);*/
+
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'bebas';
+	font-weight: 200;
+	border: 2px solid #fff;
+	vertical-align: middle;
+	border-radius: 5px;
+	transition: background-color .3s, color .3s;
+}
+
+.borderbtn:hover{
+	color: black;
+	background-color: #ffffff;
+}
+
+.borderbtn:active{
+	box-shadow: 0 0 10px rgba(0,0,0,.7), inset 0 0 10px rgba(0,0,0,.6);
+}
+
+
+
+/*----------------NAVIGATION BAR-------------------*/
+@media (max-width: 1040px){
+	#navbar-full{
+		display: none;
+	}
+}
+
+@media (min-width: 1040px){
+	#dropdown-div{
+		display: none;
+	}
+	#dropdown-nav{
+		display: none;
+	}
+}
+
+#dropdown-button button{
+	height: 75px;
+	background: transparent;
+	border: none;
+	color: #eee;
+}
+
+#dropdown-button button:focus{
+	outline: none;
+}
+
+#dropdown-div{
+	padding-top: 0px;
+	text-align: right;
+	width: 80%;
+	float: left;
+	height: 75px;
+	line-height: 75px;
+}
+
+#dropdown-nav{
+	float: left;
+	width: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dropdown-nav a{
+	text-decoration: none;
+	font-family: "Oswald-Light";
+	font-size: 20pt;
+	color: #cecece;
+}
+
+#dropdown-nav a:hover{
+	color: #FFBD4A;
+}
+
+#dropdown-nav ul{
+	padding-left: 0px;
+}
+
 #navbar-container{
 	width: 100%;
 	height: 75px;
-	background-color: rgba(241,241,241,0.9);
-	position: fixed;
+	position: relative;
 	top: 0;
+	left: 0;
+	z-index: 10;
 	box-shadow: 10px 0px 10px #888888;
-	opacity:;
+	white-space: nowrap;
+}
+
+#navbar-container.norm{
+	background-color: rgba(255,255,255,0.9);
+}
+
+#navbar-container.homepage{
+	float: left;
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: none;
+}
+
+#navbar-container.homepage a{
+	color: #cecece;
+}
+
+#navbar-container.homepage a:hover{
+	color: #F0F0F0;
+}
+
+.navbar-wrapper{
+	width: 75%;
+	margin: auto;
 }
 
 #navbar-title{
 	float: left;
 	margin-top: 0px;
-	height: 75px;
+	height: 100%;
 	width: 20%;
+	line-height: 75px;
+}
+
+#navbar-full{
+	padding-top: 0px;
+	text-align: right;
+	width: 80%;
+	float: left;
+}
+
+#navbar-full a{
+	text-decoration: none;
 }
 
 #navbar-left{
 	padding-top: 20px;
 	text-align: right;
-	width: 40%;
+	width: 37%;
 	float: left;
 }
 
 #navbar-right{
 	padding-top: 20px;
 	text-align: left;
-	width: 40%;
+	width: 37%;
 	float: left;
 }
 
@@ -64,18 +261,23 @@ body, html {
 	text-decoration: none;
 	font-family: "Bebas";
 	font-size: 50pt;
-	color: #333366; 
+	color: black; 
 }
 
 .navbar a{
 	text-decoration: none;
 	font-family: "Oswald-Light";
 	font-size: 20pt;
-	color: gray;
+	color: #444444;
+	padding: 2%;
 }
 
 .navbar a:hover{
 	color: orange;
+}
+
+.navbar li{
+	display: inline;
 }
 
 #navbar-left a{
@@ -86,22 +288,60 @@ body, html {
 	margin-left: 30px;
 }
 
-#banner{
+
+/*---------------------FOOTER----------------------*/
+#footer-container{
 	width: 100%;
-	height: 700px;
+	height: 200px;
+	background-color: black;
+	color: white;
 }
 
-#banner-img{
+#footer-wrapper{
+	width: 75%;
+	padding-top: 40px;
+	margin: auto;
+}
+
+
+
+/*-----------------------HOMEPAGE BANNER-------------------------*/
+
+
+#banner{
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/techlights_crop.jpg");
+	background: url("../img/techlights_crop.jpg") no-repeat center center;
 	background-size: cover;
-	z-index: -1;
+	background-color: #000;
+	z-index: 0;
+}
+
+.banner-buttons{
+	margin-top: 80px;
+	margin-left: -50px;
+}
+
+.banner-buttons a{
+	width: 200px;
+	margin-left: 50px;
+	font-size: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+
+.banner-buttons a:hover{
+	text-decoration: none;
 }
 
 #banner-text{
-	margin-top: -500px;
-	z-index: 1;
+	padding-top: 75px;
+	text-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
 #banner-text h1{
@@ -113,13 +353,52 @@ body, html {
 
 #banner-text p{
 	font-family: "Oswald-Light";
-	font-size: 50pt;
+	font-size: 45pt;
 	color: white;
 }
 
-#bottom-info{
+.bottom-info{
+	background-color: #f5f5f5;
+	padding-top: 20px;
 	width: 100%;
-	
+	float: left;
+	position: absolute;
+	top: 580px;
+	text-align: center;
+}
+
+.bottom-info i{
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: #222;
+}
+
+.bottom-info h3{
+	font-family: 'bebas';
+	font-size: 30px;
+	color: #222;
+}
+
+.purple{
+	color: #9d2dbf !important;
+}
+
+.blue{
+	color: #006eff !important;
+}
+
+.orange{
+	color: orange !important;
+}
+
+.bottom-info p{
+	font-family: 'oswald-light';
+	font-size: 17px;
+	margin-top: 5px;
+	line-height: 20px;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #left-box{
@@ -149,143 +428,274 @@ body, html {
 	color: #AAAAFF;
 }
 
-#page-container-1{
-	margin-top: 75px;
+
+/*----------------------PAGE CONTAINER CLASSES----------------------*/
+
+.page-container-1{ 
+	margin-top: 0px;
 }
 
-#body-container-1{
+#about-bkgd{ /*BACKGROUND IMAGE FOR PAGECONTIANER1*/
+	background-image: url("../img/about-bkgd1.jpg");
+	background-size: cover;
+}
+
+.body-container-1{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 	color: #222222;
 }
 
-#body-header-1{
-	margin-top: 25px;
-	margin-bottom: 0px;
-}
-
-#columns{
-	overflow: hidden;
-}
-
-#col-left{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: left;
-}
-
-#col-right{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: right;
-}
-
-#columns2{
-	overflow: hidden;
-	margin-top: 10px;
-}
-
-#col2left{
-	width: 49%;
-	/*background-color: #f8f8f8;*/
-	float: left;
-}
-
-#col2right{
-	width: 49%;
-	/*background-color: #f1f1f1;*/
-	float: right;
-}
-
-#page-container-2{
-	background-color: #f1f1f1;
-}
-
-#body-container-2{
-	margin-left: auto;
-	margin-right: auto;
-	width:80%;
-	text-align: center;
-	color: #222222;
-}
-#body-whatwedo{
-	margin-top: 25px;
-}
-
-#page-container-3{
-}
-
-#body-container-3{
-	margin-left: auto;
-	margin-right: auto;
-	width:80%;
-	text-align: center;
-	color: #222222;
-}
-#body-meetourteam{
-	margin-top: 25px;
-}
-
-h1{ /*Main page header*/
-	color: #333366;
-	font-size: 100pt;
+.body-container-1 h1{
+	text-shadow: 0 0 5px rgba(0,0,0,.3);
+/*	color: #333366;
+	font-size: 110pt;
 	font-family: 'Bebas';
 	font-weight: normal;
 	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 0px;*/
 }
-
-h2{ /*for text right under main page header*/
+/*
+.body-container-1 h2{ /*for text right under main page header*/ /*
 	margin-top: 0px;
 	font-size: 22pt;
 	font-family:"Oswald-Light";
 	font-weight: normal;
+} */
+
+.body-header-descrip{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-container-2{ /*FOR REST OF PAGE - NOT TOP OF PAGE*/
+}
+
+#page2-f1f1f1{
+	background-color: #f1f1f1;
+}
+
+.body-container-2{ /*FOR TEXT - 80% WIDTH*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width:80%;
+	text-align: center;
+	color: #222222;
 }
 
 
-h3{ /*column headers, subheaders in body of text*/
+/*----------about page---------*/
+.about-col{
+	height: 300px;
+	padding: 10%;
+	text-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.about-col h1{
 	font-family: "Bebas";
-	color: #AAAAFF;
-	font-size: 48pt;
-	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	font-size: 85px;
+	color: white;
 }
 
-
-h4{
-	font-family: "Bebas";
-	font-size: 80pt;
-	color: #333366;
-	font-weight: normal;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-p{ /*for all body text*/
+.about-col h2{
 	font-family: "Oswald-Light";
-	font-size: 16pt;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	font-size: 60px;
 }
 
-.osbold{ /*Oswald Bold*/
-	font-family: "Oswald";
+.about-col p{
+	font-family: "oswald-light";
+	font-size: 30px;
+}
+
+.about-col span{
+	color: #ff9933;
 	font-weight: bold;
 }
 
-.oswald-30{
+.about-col.left{
+	background-color:#727272;
+	color: white;
+}
+
+.about-col.right{
+	background-color: #474775;
+	color: white;
+}
+
+.about-text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#about-learnmore{
+	background-color: #bababa;
+	padding: 100px;
+	text-shadow: 0 0 10px rgba(0,0,0,.2)
+}
+
+#about-learnmore h4{
+	color: white;
+}
+
+#about-learnmore p{
+	font-size: 30px;
+	color: white;
+}
+
+#team-faces{
+	padding-top: 25px;
+}
+
+#team-faces li{
 	font-family: "Oswald-Light";
-	font-size: 30pt;
+	font-size: 25px;
 }
 
-.bebas-32{
+/*------------PROJECTS PAGE----------------*/
+#projects-container{
+	padding: 0%;
+}
+
+.proj{
+	
+	background-color: #f1f1f1;
+}
+
+.link{
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+	/*background-color: rgba(0,0,0,0.6);*/
+
+}
+
+.link:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.link:hover a{
+	opacity: 1;
+}
+.link a{
 	font-family: "Bebas";
-	font-size: 32pt;
-
+	font-size: 90px;
+	color: white;
+	opacity: 0;
+	text-decoration: none;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
 }
 
+.link a:hover{
+	color: #ff9933;
+}
+
+.proj.isbemain{
+	background-image: url("../img/isbemain.jpg");
+	background-size: cover;
+}
+
+.proj.shermanave{
+	background-image: url("../img/shermanave.jpg");
+	background-size: cover;
+}
+
+.proj.isbemark{
+	background-image: url("../img/isbemark.jpg");
+	background-size: cover;
+}
+
+.proj.isbeanalytics{
+	background-image: url("../img/isbeanalytics.jpg");
+	background-size: cover;
+}
+
+
+#projects-workwithus{
+	background-color: #474775;
+	padding: 50px;
+}
+
+#projects-workwithus h4{
+	color: white;
+}
+
+#projects-workwithus p{
+	font-size: 45px;
+	color: white;
+}
+
+
+/*------------------CONTACT--------------------*/
+.contact-col{
+	padding: 100px;
+}
+
+.contact-col h1{
+	font-family: "Oswald-Light";
+	font-size: 60px;
+	color: white;
+	text-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
+.contact-col p{
+	font-family: "oswald-light";
+	font-size: 30px;
+	text-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
+.contact-col span{
+	color: #ff9933;
+	font-weight: bold;
+}
+
+.contact-col.work{
+	background-color: #727272;
+	color: white;
+}
+
+.contact-col.join{
+	background-color: #474775;
+	color: white;
+}
+
+.social-media-container{
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	background-color: #575757;
+}
+
+#social-media-buttons a{
+	padding-right: 15px;
+}
+
+#social-media-buttons a:hover{
+	color: #FFF;
+}
+
+/*--------------------FOOTER---------------------*/
+
+.footer{
+	height: 200px;
+	width: 100%;
+	background-color: #484848;
+}
+
+.foot-logo{
+	color: white;
+	font-family: "Bebas";
+	font-size: 40pt;
+}
 
 

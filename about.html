@@ -1,88 +1,108 @@
 <head>
 	<title>ISBE Tech | About</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- GRID -->
+	<link rel="stylesheet" type="text/css" href="css/gumby.css" >
+
+	<link rel="stylesheet" href="css/buttons.css">
+	 
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/buttons.js"></script>
+	<script type="text/javascript" src="js/navbutton.js"></script>
 </head>
 
 <body>
-	<div id="navbar-container">
-		<div class = "navbar"id = "navbar-left">
-			<a style="color: orange;" href="about.html">ABOUT</a>
-			<a href="projects.html">PROJECTS</a>
-		</div>
-
-		<div id ="navbar-title">
-			<a href="home.html">ISBE TECH</a>
-		</div>
-
-		<div class = "navbar" id = "navbar-right">
-			<a href="events.html">EVENTS</a>
-			<a href="contact.html">CONTACT</a>
-		</div>
-	</div>	
-
-	<div id = "page-container-1">
-		<div id = "body-container-1">
-			<div id = "body-header-1">
-				<br>
-				<h1>WE ARE ISBE TECH.</h1>	
-				<h2>
-					We are a group of students and alumni with a <span class = "osbold">strong enthusiasm for technology </span>. We maintain a <span class = "osbold">fascination</span> and <span class = "osbold">excitement</span> for its capabilities for <span class = "osbold">social and political empowerment.</span>
-				</h2>
+	<div id="navbar-container" class="norm">
+		<div class="navbar-wrapper">
+			<div id ="navbar-title">
+				<a href="index.html">ISBE TECH</a>
 			</div>
-			<div id = "columns">
-				<div id = "col-left">
-					<h3> WHO?</h3>
-					<p>
-						We come from a diverse set of backgrounds, both technical and non-technical. We share self-learning drive and a belief that through technology, we can shape a better future and perhaps blur the lines between the first and third worlds. 
-					<p>		
-				</div>
-				<div id = "col-right">
-					<h3>WHY?</h3>
-					<p>
-						We believe that education in areas of technology and programming is the way of the future. It is crucial we design our products and solutions in a civically responsible way. The Tech group focuses on providing that education for its members as well as the greater community. 
-					</p>
+			<div class = "navbar" id = "navbar-full">
+				<ul>
+					<li><a href="about.html" id="active" >ABOUT US</a></li>
+					<li><a href="whatwedo.html">WHAT WE DO</a></li>
+					<li><a href="projects.html">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div id="dropdown-div">
+			    <a href="#" id="dropdown-button">
+			    	<button class="btn-lg" style="color: #737373;">
+			    		<span class="glyphicon glyphicon-align-justify">
+			    		</span>
+		    		</button>
+			    </a>
+			</div>
+		</div>
+	</div>
+	<div id="dropdown-nav" style="display: none;">				
+		<ul>
+			<li><a href="about.html" id="active">ABOUT US</a></li>
+			<li><a href="whatwedo.html">WHAT WE DO</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+		</ul>
+	</div>
+
+	<div class = "page-container-1" id="about-bkgd">
+		<div class = "body-container-1">
+			<h1>WE ARE ISBE TECH.</h1>	
+			<div class = "body-header-descrip">
+				<h2>We are a group of students and alumni with a <span class = "osbold">strong enthusiasm for technology </span>. We maintain a <span class = "osbold">fascination</span> and <span class = "osbold">excitement</span> for its capabilities for <span class = "osbold">social and political empowerment.</span></h2>
+			</div>
+		</div>
+	</div>
+
+	<div id="about-columns">
+		<div class="row">
+			<div class = "six columns full">
+				<div class = "about-col left">
+					<div class ="about-text">
+						<h1>TECH <span>+</span> BUSINESS.</h1>
+						<h2>the best of both worlds.</h2>
+					</div>
 				</div>
 			</div>
-			<div id = "columns2">
-				<div id = "col2left">
-					<span class = "oswald-30">
-						Interested in joining? <br>
-						<span class = "bebas-32" ><a class = "oslink" href="contact.html">CONTACT US.</a></span>
-					</span>	
-				</div>
-				<div id = "col2right">
-					<span class = "oswald-30">
-						Check out some of our <br>
-						<span class = "bebas-32" ><a class = "oslink" href="projects.html">PAST PROJECTS.</a></span>
-					</span>	
+			<div class = "six columns full">
+				<div class = "about-col right">
+					<div class = "about-text">
+						<p>We are the only group on campus in which you can practice <span>business management</span> and learn <span>technical skills</span> at the same time. Meet with clients, discuss contracts, and build some really awesome products while you're at it.</p> 
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id = "page-container-2">
-		<div id = "body-container-2">
-			<div id = "body-whatwedo">
-				<h4>What we do</h4>
-				<h3>Website Design</h3>
-				<h3>Website Mobilization</h3>
-				<h3>Data Analytics</h3>
-				<h3>App Design</h3>
+	<div id ="about-learnmore">
+			<h4>WANT TO LEARN MORE?</h4>
+			<p>find out what isbe tech does.</p>
+			<br>
+			<a href="whatwedo.html" class="borderbtn">WHAT WE DO</a>
+	</div>
+
+	<div id= "about-ourteam">
+		<div class = "body-container-2">
+				<h4>MEET OUR TEAM</h4>
+
+				<div id="team-faces">
+					<ul class="four_up tiles space">
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 1</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 2</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 3</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 4</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 5</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 6</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 7</li>
+						<li><img src="img/nulogo.jpg"> Willie the Wildcat 8</li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 	</div>
- 
- 	<div id = "page-container-3">
-		<div id = "body-container-3">
-			<div id = "body-meetourteam">
-				<h4>Meet our team</h4>
-				<h3>Website Design</h3>
-				<h3>Website Mobilization</h3>
-				<h3>Data Analytics</h3>
-				<h3>App Design</h3>
-			</div>
-		</div>
-	</div>
+
 
 </body>
 
