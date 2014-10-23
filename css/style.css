@@ -349,6 +349,7 @@ p{ /*for all body text*/
 	font-size: 80pt;
 	color: white;
 	font-weight: normal;
+	padding-top: 7%;
 }
 
 #banner-text p{
