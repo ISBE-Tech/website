@@ -2,7 +2,7 @@
 <head>
 	<title>ISBE Tech | Home</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" charset="utf-8"/>
-
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- GRID -->
 	<link rel="stylesheet" type="text/css" href="css/gumby.css" >
 
@@ -12,6 +12,7 @@
 	 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="js/buttons.js"></script>
+	<script type="text/javascript" src="js/navbutton.js"></script>
 </head>
 
 <body>
@@ -37,13 +38,31 @@
 			<div id ="navbar-title">
 				<a href="index.html">ISBE TECH</a>
 			</div>
-			<div class = "navbar"id = "navbar-full">
-				<a href="about.html" >ABOUT US</a>
-				<a href="whatwedo.html">WHAT WE DO</a>
-				<a href="projects.html">PROJECTS</a>
-				<a href="contact.html">CONTACT US</a>
+			<div class = "navbar" id = "navbar-full">
+				<ul>
+					<li><a href="about.html" >ABOUT US</a></li>
+					<li><a href="whatwedo.html">WHAT WE DO</a></li>
+					<li><a href="projects.html">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div id="dropdown-div">
+			    <a href="#" id="dropdown-button">
+			    	<button class="btn-lg button-royal">
+			    		<span class="glyphicon glyphicon-align-justify">
+			    		</span>
+		    		</button>
+			    </a>
 			</div>
 		</div>
+	</div>
+	<div id="dropdown-nav" style="display: none;">				
+		<ul>
+			<li><a href="about.html" >ABOUT US</a></li>
+			<li><a href="whatwedo.html">WHAT WE DO</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+		</ul>
 	</div>
 
 	<div id="banner">
@@ -52,8 +71,8 @@
 				<p>loreum ipsum doloreum</p>
 		</div>
 		<div class="banner-buttons">
-			<a href="#" class="borderbtn"><i class="fa fa-users"></i> Join Us</a>
-			<a href="#" class="borderbtn"><i class="fa fa-suitcase"></i> Work With Us</a>
+			<a href="#" class="borderbtn"><i class="fa fa-users"></i> Join Us</a></li>
+			<a href="#" class="borderbtn"><i class="fa fa-suitcase"></i> Work With Us</a></li>
 		</div>
 	</div>
 

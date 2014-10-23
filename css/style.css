@@ -23,6 +23,14 @@ a.oslink:link{color: #FF6600; text-decoration: none;}
 a.oslink:visited{color: #FF6600; text-decoration: none;}
 a.oslink:hover{color: #FFAA00; text-decoration: none;}
 
+#active{
+	color: #FFAA00;
+}
+
+a{
+	text-decoration: none;
+}
+
 body, html {
 	margin: 0;
 	width: 100%;
@@ -125,6 +133,62 @@ p{ /*for all body text*/
 
 
 /*----------------NAVIGATION BAR-------------------*/
+@media (max-width: 1040px){
+	#navbar-full{
+		display: none;
+	}
+}
+
+@media (min-width: 1040px){
+	#dropdown-div{
+		display: none;
+	}
+	#dropdown-nav{
+		display: none;
+	}
+}
+
+#dropdown-button button{
+	height: 75px;
+	background: transparent;
+	border: none;
+	color: #eee;
+}
+
+#dropdown-button button:focus{
+	outline: none;
+}
+
+#dropdown-div{
+	padding-top: 0px;
+	text-align: right;
+	width: 80%;
+	float: left;
+	height: 75px;
+	line-height: 75px;
+}
+
+#dropdown-nav{
+	float: left;
+	width: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dropdown-nav a{
+	text-decoration: none;
+	font-family: "Oswald-Light";
+	font-size: 20pt;
+	color: #cecece;
+}
+
+#dropdown-nav a:hover{
+	color: #FFBD4A;
+}
+
+#dropdown-nav ul{
+	padding-left: 0px;
+}
 
 #navbar-container{
 	width: 100%;
@@ -134,6 +198,7 @@ p{ /*for all body text*/
 	left: 0;
 	z-index: 10;
 	box-shadow: 10px 0px 10px #888888;
+	white-space: nowrap;
 }
 
 #navbar-container.norm{
@@ -150,6 +215,10 @@ p{ /*for all body text*/
 	color: #cecece;
 }
 
+#navbar-container.homepage a:hover{
+	color: #F0F0F0;
+}
+
 .navbar-wrapper{
 	width: 75%;
 	margin: auto;
@@ -158,15 +227,20 @@ p{ /*for all body text*/
 #navbar-title{
 	float: left;
 	margin-top: 0px;
-	height: 75px;
+	height: 100%;
 	width: 20%;
+	line-height: 75px;
 }
 
 #navbar-full{
-	padding-top: 20px;
+	padding-top: 0px;
 	text-align: right;
 	width: 80%;
 	float: left;
+}
+
+#navbar-full a{
+	text-decoration: none;
 }
 
 #navbar-left{
@@ -200,6 +274,10 @@ p{ /*for all body text*/
 
 .navbar a:hover{
 	color: orange;
+}
+
+.navbar li{
+	display: inline;
 }
 
 #navbar-left a{
@@ -257,8 +335,12 @@ p{ /*for all body text*/
 	box-shadow: 0 0 10px rgba(0,0,0,.7);
 }
 
+.banner-buttons a:hover{
+	text-decoration: none;
+}
+
 #banner-text{
-	padding-top: 18%;
+	padding-top: 75px;
 	text-shadow: 0 0 10px rgba(0,0,0,.6);
 }
 
@@ -584,6 +666,22 @@ p{ /*for all body text*/
 .contact-col.join{
 	background-color: #474775;
 	color: white;
+}
+
+.social-media-container{
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	background-color: #575757;
+}
+
+#social-media-buttons a{
+	padding-right: 15px;
+}
+
+#social-media-buttons a:hover{
+	color: #FFF;
 }
 
 /*--------------------FOOTER---------------------*/
